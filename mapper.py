@@ -39,8 +39,6 @@ for line in input_stream:
                 r"([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+", r"\1", 
                 normalize( "NFD", word), 0, re.I
             )
-
-        # -> NFC
         word = normalize( 'NFC', word)
         # Agafam la primera lletra de les paraules.
         lletra = word[0:1]
