@@ -1,3 +1,4 @@
+# He agafat el teu exemple de reducer
 from operator import itemgetter
 import sys
 
