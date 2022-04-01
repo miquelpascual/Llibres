@@ -16,7 +16,7 @@ puntuacions = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 stop_words = stopwords.words('italian') + stopwords.words('spanish') + stopwords.words('portuguese')
 stop_words = set(stop_words)
 # Feim que l'encoding utilitzat per llegir les línees dels arxius sigui latin1.
-input_stream = io.TextIOWrapper(sys.stdin.buffer, encoding='latin1')
+input_stream = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8')
 
 # Llegim les línees dels llibres i eliminam les senyals de puntuació.
 for line in input_stream:
